@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Angular example</title>
+		<meta charSet="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style media="only screen">
+            html, body, #app {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            html {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                overflow: auto;
+            }
+
+            body {
+                padding: 1rem;
+                overflow: auto;
+            }
+        </style>
+	</head>
+	<body>
+		<div id="app">
+			<my-app>Loading Angular example&hellip;</my-app>
+		</div>
+		<script>document.write('<base href="' + document.location + '" />');</script>
+		<script src="https://cdn.jsdelivr.net/npm/core-js-bundle@3.6.5/minified.js">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.2/dist/zone.min.js">
+		</script>
+		<script>
+            var appLocation = './';
+            var boilerplatePath = '';
+            var systemJsMap = {
+                "@ag-grid-community/angular": "https://cdn.jsdelivr.net/npm/@ag-grid-community/angular@29.3.5/",
+                "@ag-grid-community/styles": "https://cdn.jsdelivr.net/npm/@ag-grid-community/styles@29.3.5",
+                "ag-grid-angular": "https://cdn.jsdelivr.net/npm/ag-grid-angular@29.3.5/",
+                "ag-grid-community": "https://cdn.jsdelivr.net/npm/ag-grid-community@29.3.5",
+                "ag-grid-enterprise": "https://cdn.jsdelivr.net/npm/ag-grid-enterprise@29.3.5/"
+            };
+            var systemJsPaths = {
+                "@ag-grid-community/client-side-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-community/client-side-row-model@29.3.5/dist/client-side-row-model.cjs.min.js",
+                "@ag-grid-community/core": "https://cdn.jsdelivr.net/npm/@ag-grid-community/core@29.3.5/dist/core.cjs.min.js",
+                "@ag-grid-community/csv-export": "https://cdn.jsdelivr.net/npm/@ag-grid-community/csv-export@29.3.5/dist/csv-export.cjs.min.js",
+                "@ag-grid-community/infinite-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-community/infinite-row-model@29.3.5/dist/infinite-row-model.cjs.min.js",
+                "@ag-grid-enterprise/charts": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/charts@29.3.5/dist/charts.cjs.min.js",
+                "@ag-grid-enterprise/clipboard": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/clipboard@29.3.5/dist/clipboard.cjs.min.js",
+                "@ag-grid-enterprise/column-tool-panel": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/column-tool-panel@29.3.5/dist/column-tool-panel.cjs.min.js",
+                "@ag-grid-enterprise/core": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/core@29.3.5/dist/core.cjs.min.js",
+                "@ag-grid-enterprise/excel-export": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/excel-export@29.3.5/dist/excel-export.cjs.min.js",
+                "@ag-grid-enterprise/filter-tool-panel": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/filter-tool-panel@29.3.5/dist/filter-tool-panel.cjs.min.js",
+                "@ag-grid-enterprise/master-detail": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/master-detail@29.3.5/dist/master-detail.cjs.min.js",
+                "@ag-grid-enterprise/menu": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/menu@29.3.5/dist/menu.cjs.min.js",
+                "@ag-grid-enterprise/multi-filter": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/multi-filter@29.3.5/dist/multi-filter.cjs.min.js",
+                "@ag-grid-enterprise/range-selection": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/range-selection@29.3.5/dist/range-selection.cjs.min.js",
+                "@ag-grid-enterprise/rich-select": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/rich-select@29.3.5/dist/rich-select.cjs.min.js",
+                "@ag-grid-enterprise/row-grouping": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/row-grouping@29.3.5/dist/row-grouping.cjs.min.js",
+                "@ag-grid-enterprise/server-side-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/server-side-row-model@29.3.5/dist/server-side-row-model.cjs.min.js",
+                "@ag-grid-enterprise/set-filter": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/set-filter@29.3.5/dist/set-filter.cjs.min.js",
+                "@ag-grid-enterprise/side-bar": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/side-bar@29.3.5/dist/side-bar.cjs.min.js",
+                "@ag-grid-enterprise/sparklines": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/sparklines@29.3.5/dist/sparklines.cjs.min.js",
+                "@ag-grid-enterprise/status-bar": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/status-bar@29.3.5/dist/status-bar.cjs.min.js",
+                "@ag-grid-enterprise/viewport-row-model": "https://cdn.jsdelivr.net/npm/@ag-grid-enterprise/viewport-row-model@29.3.5/dist/viewport-row-model.cjs.min.js"
+            };
+        </script>
+		<script src="https://cdn.jsdelivr.net/npm/systemjs@0.21.6/dist/system.js">
+		</script>
+		<script src="systemjs.config.js">
+		</script>
+		<script>System.import('main.ts').catch(function(err) { console.error(err); });</script>
+	</body>
+</html>
